@@ -2,3 +2,63 @@ body {
     margin: 0;
     padding: 0;
 }
+
+* {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+main {
+    min-height: 100vh;
+    background: black;
+}
+
+/* flexbox classes */
+.column {
+    flex-direction: column !important;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* movie list */
+.movie-list {
+    align-items: center;
+    justify-content: start;
+}
+
+/* bootstrap edits */
+.card {
+    min-width: 230px !important;
+    cursor: pointer;
+    border: .5px solid white !important;
+    border-radius: 0 !important;
+}
+
+.card-img-overlay {
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.card-img-overlay:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.card-img {
+    height: 260px !important;
+    width: 230px !important;
+}
+
+.list-group-item {
+    border-radius: 0 !important;
+}
+
+/* common classes */
+.shorten-text {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
